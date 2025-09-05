@@ -2,17 +2,20 @@
   <!-- <TheBigScreen /> -->
   <!-- <wsDemo /> -->
 
-  <main>
+  <!-- <main>
     <h1>前端电子签名 Demo</h1>
     <p>请在下方的白色区域签名：</p>
     <SignaturePad />
-  </main>
+  </main> -->
+
+  <watchEffectDemo />
 </template>
 
 <script setup>
 // import TheBigScreen from './components/TheBigScreen.vue';
 // import wsDemo from './components/wsDemo.vue';
-import SignaturePad from './components/SignaturePad.vue';
+// import SignaturePad from './components/SignaturePad.vue';
+import watchEffectDemo from './components/watchEffectDemo.vue';
 </script>
 
 <style>
