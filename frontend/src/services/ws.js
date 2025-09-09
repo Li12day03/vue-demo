@@ -1,11 +1,4 @@
 /**
- * WebSocketService.js
- *
- * 一个高可用的 WebSocket 服务模块 (JS函数式版本)。
- * 实现了心跳机制、指数退避自动重连，并提供了可靠的清理方法。
- */
-
-/**
  * 创建一个高可用的 WebSocket 服务实例。
  * 这是一个工厂函数，返回一个包含 connect, send, 和 close 方法的服务对象。
  * @param {object} options 配置选项
@@ -16,7 +9,10 @@
  * @param {function} [options.onReconnect] 尝试重连时的回调
  * @returns {{connect: function, send: function, close: function}}
  */
+
 export default function createWebSocketService(options) {
+  console.log("options", options);
+
   // --- 1. 状态与配置 ---
   const {
     url,
@@ -106,6 +102,8 @@ export default function createWebSocketService(options) {
     ws.onmessage = event => {
       try {
         const data = JSON.parse(event.data);
+        console.log("event.data", event.data);
+
         resetHeartbeat(); // 收到任何消息都重置心跳
         if (data.type === "pong") {
           return; // 心跳响应，无需处理

@@ -46,6 +46,8 @@ onMounted(() => {
 
     onMessage: (data) => {
       logs.value.unshift(data);
+      console.log("data:---", data);
+
       if (logs.value.length > maxLogs) {
         logs.value.pop();
       }

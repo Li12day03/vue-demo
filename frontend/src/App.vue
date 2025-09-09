@@ -1,6 +1,6 @@
 <template>
   <!-- <TheBigScreen /> -->
-  <!-- <wsDemo /> -->
+  <wsDemo />
 
   <!-- <main>
     <h1>前端电子签名 Demo</h1>
@@ -8,13 +8,13 @@
     <SignaturePad />
   </main> -->
 
-  <watchEffectDemo />
+  <!-- <watchEffectDemo /> -->
 </template>
 
 <script setup>
-// import TheBigScreen from './components/TheBigScreen.vue';
-// import wsDemo from './components/wsDemo.vue';
-// import SignaturePad from './components/SignaturePad.vue';
+import TheBigScreen from './components/TheBigScreen.vue';
+import wsDemo from './components/wsDemo.vue';
+import SignaturePad from './components/SignaturePad.vue';
 import watchEffectDemo from './components/watchEffectDemo.vue';
 </script>
 

@@ -4,7 +4,7 @@
  * 增加了 IndexedDB 持久化能力，支持断线续传。
  */
 // 1. 【新增】导入我们刚刚创建的数据库辅助函数
-import {getLastMessageId, setLastMessageId} from "./db.js";
+import {getLastMessageId, setLastMessageId} from "../utils/db.js";
 
 export default function createWebSocketService(options) {
   // --- 状态与配置 ---
