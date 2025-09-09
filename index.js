@@ -11,9 +11,13 @@
 
 const countDown2 = n => {
   const timer = setTimeout(() => {
-    if (n <= 0) clearTimeout(timer);
+    if (n <= 0) {
+      clearTimeout(timer);
+      return;
+    }
     console.log(n);
     n--;
+    countDown2(n);
   }, 1000);
 };
 

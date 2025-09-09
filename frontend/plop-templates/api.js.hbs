@@ -1,0 +1,28 @@
+// src/api/{{pathName}}.js
+
+// 假设我们有一个通用的请求实例 request
+// import request from '@/utils/request';
+
+/**
+* 获取 {{name}} 列表
+*/
+export function get{{pathName}}List(params) {
+// return request({
+// url: '/api/{{lowerCase pathName}}',
+// method: 'get',
+// params,
+// });
+console.log('调用了 get{{pathName}}List API');
+return Promise.resolve({ code: 200, data: [], message: 'success' });
+}
+
+/**
+* 新增 {{name}}
+*/
+export function add{{pathName}}(data) {
+// return request({
+// url: '/api/{{lowerCase pathName}}',
+// method: 'post',
+// data,
+// });
+}

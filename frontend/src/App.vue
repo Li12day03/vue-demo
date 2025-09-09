@@ -1,6 +1,6 @@
 <template>
   <!-- <TheBigScreen /> -->
-  <wsDemo />
+  <!-- <wsDemo /> -->
 
   <!-- <main>
     <h1>前端电子签名 Demo</h1>
@@ -9,6 +9,12 @@
   </main> -->
 
   <!-- <watchEffectDemo /> -->
+  <!-- <Permission /> -->
+
+  <!-- <BatchUploader /> -->
+
+  <AnalysisComponent />
+
 </template>
 
 <script setup>
@@ -16,6 +22,9 @@ import TheBigScreen from './components/TheBigScreen.vue';
 import wsDemo from './components/wsDemo.vue';
 import SignaturePad from './components/SignaturePad.vue';
 import watchEffectDemo from './components/watchEffectDemo.vue';
+import Permission from './components/Permission.vue';
+import BatchUploader from './components/BatchUploader.vue';
+import AnalysisComponent from './components/AnalysisComponent.vue';
 </script>
 
 <style>
